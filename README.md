@@ -139,4 +139,3 @@ El proyecto sigue la estructura estándar de Laravel 11. Puedes consultar la [do
 ## 🛡️ Licencia
 
 Este proyecto está bajo la licencia [MIT](LICENSE). Siéntete libre de usarlo y modificarlo según tus necesidades.
-```
