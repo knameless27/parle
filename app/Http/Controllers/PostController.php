@@ -14,6 +14,7 @@ class PostController extends Controller
         $validator = Validator::make($request->all(), [
             'title' => 'required|string|max:255',
             'content' => 'required|string',
+            'category_id' => 'required',
         ]);
 
         if ($validator->fails()) {
@@ -23,6 +24,7 @@ class PostController extends Controller
         $post = Post::create([
             'title' => $request->title,
             'content' => $request->content,
+            'category_id' => $request->category_id,
             'user_id' => Auth::id(),
         ]);
 
@@ -34,7 +36,7 @@ class PostController extends Controller
 
     public function index($category)
     {
-        $posts = Post::where('category_id', $category)->get();
+        $posts = Post::where('category_id', $category)->paginate();
 
         if ($posts->isEmpty()) {
             return response()->json([
