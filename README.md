@@ -134,8 +134,3 @@ Aquí tienes comandos que pueden ayudarte en el desarrollo:
 
 El proyecto sigue la estructura estándar de Laravel 11. Puedes consultar la [documentación oficial](https://laravel.com/docs/11.x) para entender mejor cómo funciona el framework.
 
----
-
-## 🛡️ Licencia
-
-Este proyecto está bajo la licencia [MIT](LICENSE). Siéntete libre de usarlo y modificarlo según tus necesidades.
